@@ -1,0 +1,505 @@
+:root{
+    --primarycolor: #FFF;
+    --subcolor1: #111;
+    --fontcolor: #00361F;
+}
+
+/*--------CSS for Everything-----------*/
+html, body{
+    font-family: 'Rounded Mplus 1c'; 
+    width: 100%;
+    margin: 0 auto;
+    background: lightgray;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 30px;
+    font-weight: 300;
+    color: var(--fontcolor);
+}
+
+/* ------------Header Section-------------- */
+.header {
+    background: url(../images/background.JPG) 1440px;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Signika', sans-serif;
+    margin: 0 auto;
+    color:  white;
+    padding-top: 250px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 5.5em;
+}
+
+h1::before,
+h1::after{
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+}
+
+.port {
+    text-align: center;
+    color: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+    
+}
+
+.port::before,
+.port::after{
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 8%;
+}
+
+/*---------------About Section---------------*/
+
+#about{
+    margin: 0 auto;
+    background: url("../images/backphoto.JPG");
+    background-size: cover;
+    height: 100vh;
+}
+
+.mainabout {
+    margin: 0 auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0 auto;
+    color: white;
+    padding-top: 75px;
+    text-align: left;
+    font-size: 5em;
+}
+
+.about{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 600px;
+}
+
+.aboutmejp .aboutjp{
+    font-family: "Rounded Mplus 1c";
+    font-size: 1.3em;
+    text-align: left;
+    color: black;
+    padding-left: 50px;
+    border-bottom: 2px solid black;
+    border-left: 15px solid black;
+}
+
+.aboutmeen .abouten{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.4em;
+    text-align: right;
+    color: black;
+    padding-right: 50px;
+    border-bottom: 2px solid black;
+    border-right: 15px solid black;
+}
+
+/*---------------Hobby Section---------------*/
+#hobby{
+}
+
+.mainhobby{
+    margin: 0 auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0 auto;
+    color: white;
+    padding-top: 75px;
+    text-align: right;
+    font-size: 5em;
+}
+
+.hobbyhead{
+    margin: 0 auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0 auto;
+    color: white;
+    padding-top: 300px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 4em;
+}
+
+.music{
+    height: 100vh;
+    background: url("../images/music.jpeg") 1440px;
+    background-size: cover;
+}
+
+.movie{
+    height: 100vh;
+    background: url("../images/movieback.jpeg");
+    background-size: cover;
+}
+
+.game{
+    height: 100vh;
+    background: url("../images/game.jpeg") 1440px;
+    background-size: cover;
+}
+
+.photography{
+    height: 100vh;
+    background: url("../images/photography.jpg") 1440px;
+    background-size: cover;
+}
+
+.hobbyhead::before,
+.hobbyhead::after{
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+}
+
+.musichead{
+    color: white;
+    padding-top: 150px;
+}
+
+.musichead::before,
+.musichead::after{
+    background-color: white;
+}
+
+.musicdetails{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.artists{
+    width: 30%;
+    text-align: left;
+}
+
+.artistrank{
+    color: white;
+    font-size: 2em;
+    border-left: 10px solid black;
+}
+
+.artistname{
+    color: white;
+    font-size: 1.5em;
+    border-left: 5px solid black;
+    border-bottom: 2px solid black;
+}
+
+.artistname a{
+    text-decoration: none;
+    color: white;
+}
+
+.artistname a:hover{
+    color: lightblue;
+}
+
+.moviedetails{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.movies{
+    width: 30%;
+    text-align: left;
+}
+
+.movierank{
+    color: white;
+    font-size: 2em;
+    border-left: 10px solid black;
+}
+
+.moviename{
+    color: white;
+    font-size: 1.5em;
+    border-left: 5px solid black;
+    border-bottom: 2px solid black;
+}
+
+.takeru{
+    text-align: right;
+    color: gray;
+}
+
+.gamehead{
+    color: black;
+}
+
+.gamehead::before,
+.gamehead::after{
+    background-color: black;
+}
+
+.gamedetails{
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+}
+
+.games{
+    width: 30%;
+    text-align: left;
+}
+
+.gamerank{
+    color: black;
+    font-size: 2em;
+    border-left: 10px solid black;
+}
+
+.gamename{
+    color: black;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5em;
+    border-left: 5px solid black;
+    border-bottom: 2px solid black;
+}
+
+.photodetails{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+/*------------------Food Section-------------------*/
+#likes {
+    margin: 0 auto;
+}
+
+.firstfood{
+    background: url("../images/family/yakiniku.jpg") 1440px;
+    background-size: cover;
+    height: 100vh;
+}
+
+.foodhead{
+    margin: 0 auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0 auto;
+    color: white;
+    padding-top: 120px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 4em;
+}
+
+.foodhead::before,
+.foodhead::after{
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+}
+
+.mainfood{
+    margin: 0 auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0 auto;
+    color: ghostwhite;
+    padding-top: 75px;
+    text-align: left;
+    font-size: 5em;
+}
+
+.yakiniku{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.secondfood{
+    background: url("../images/food/chinese.JPG") 1440px;
+    background-size: cover;
+    height: 100vh;
+}
+
+.chinesehead{
+    padding-top: 250px;
+}
+
+.chinese{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+/*-----------------Life Section------------------*/
+#life{
+    margin: 0 auto;
+    height: 100vh;
+    background: url("../images/family/runn.JPG") 1440px;
+    background-size: cover;
+}
+
+.mainlife{
+    margin: 0 auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0 auto;
+    color: white;
+    padding-top: 75px;
+    text-align: right;
+    font-size: 5em;
+}
+
+.mainlife span{
+    font-size: 0.2em;
+}
+
+.life{
+    padding-left: 250px;
+    color: white;
+}
+
+.life .year{
+    font-size: 1.5em;
+}
+
+.life .event{
+    padding-left: 30px;
+}
+
+.run{
+    padding-right: 200px;
+    text-align: right;
+}
+
+/* ------------Family Section---------- */
+#family{
+    margin: 0 auto;
+    background: url("../images/family/family1.jpg") 1440px;
+    background-size: cover;
+    height: 100vh;
+}
+
+.mainfamily{
+    margin: 0 auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0 auto;
+    color: white;
+    padding-top: 75px;
+    text-align: left;
+    font-size: 5em;
+}
+
+.family{
+    margin: 0 auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0 auto;
+    color: white;
+    padding-top: 120px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 4em;
+}
+
+.family::before,
+.family::after{
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+}
+/*-----------------Footer Section------------------*/
+.sns{
+    text-align: center;
+}
+
+.myfacebook{
+    color: #4A82F7;
+}
+
+.mytwitter{
+    color: #47A0EC;
+}
+
+.myinstagram{
+    color: #B73F8F;
+}
+
+#footer{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+/*----------------CSS for ToTop JavaScript----------------*/
+.totop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: inline;
+    margin: 0;
+}
+.totop a {
+	display:block;
+	text-decoration:none;
+}
+.totop img {
+	background:#000;
+}
+.totop img:hover {
+	background:#333;
+}
+
+/* --------------Navigation ---------- */
+
+.nav{
+    position:fixed;
+	top:0px;
+	width:100%; 
+	height:75px; 
+	background-color:black;
+	color: #FFFFFF;
+	z-index:9999;
+	display: none;
+}
+
+.navli a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.navli a:hover{
+    text-decoration: underline;
+}
+
+
+.navli {
+    list-style: none;
+    display: inline-block;
+    margin: 0 90px;
+    font-size: 30px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--fontcolor);
+    padding: 6px;
+};
